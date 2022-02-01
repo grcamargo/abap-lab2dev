@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Teste</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGRUPO_EXEMPLO_2323TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGRUPO_EXEMPLO_2323</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZGRUPO_EXEMPLO_2323</FUNCNAME>
+     <SHORT_TEXT>Teste 23</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_ELEMENTO</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT8</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_SAIDA_FIB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INT8</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>OVERFLOW</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_ELEMENTO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Valor 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_SAIDA_FIB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Minimum time in microseconds</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OVERFLOW</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Erroo</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

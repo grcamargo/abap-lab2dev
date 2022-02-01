@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo de Função para Conta</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_CONTATOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_CONTA</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_CRIAR_CONTA</FUNCNAME>
+     <SHORT_TEXT>Criar conta bancária</SHORT_TEXT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CH_CONTA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCONTA</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CH_CONTA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela Conta - Treinamento</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_PROCURA_PESSOA</FUNCNAME>
+     <SHORT_TEXT>Função Procurar Pessoa</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_CLIENTE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCONTA-CLIENTE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_CLIENTE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data Element CPF</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_VALIDA_CONTA</FUNCNAME>
+     <SHORT_TEXT>ZFM_VALIDA_CONTA</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_CONTA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCONTA</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_CONTA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabela Conta - Treinamento</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFM_VALIDA_PESSOA</FUNCNAME>
+     <SHORT_TEXT>Função de validação de CPF na tabela pessoa</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_CPF</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZCONTA-CLIENTE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_INVALID_USER</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_CPF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data Element CPF</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_INVALID_USER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

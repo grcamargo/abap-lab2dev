@@ -1,0 +1,5 @@
+FUNCTION-POOL ZGRUPO_EXEMPLO_101.           "MESSAGE-ID ..
+
+* INCLUDE LZGRUPO_EXEMPLO_101D...            " Local class definition
+
+DATA VG_SAIDA_FIB TYPE INT8.
